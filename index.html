@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/icon.jpg">
+        <link rel="stylesheet" href="css/animate.css">
+        <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/a36168cb87.js" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+        <title>Jankenspock</title>
+    </head>
+    <body>
+        <header id="landing">
+            <div id="title">Rock Paper Scissors Lizard Spock</div>   
+            <div id="play"><i class="fas fa-chevron-circle-right fa-4x" onclick="instructions()"></i></i><br><br>GO</div>
+        </header>        
+        <section id="instr">
+            <h1>Instructions</h1><br>
+            <div>The game is an expansion on the game Rock, Paper, Scissors. 
+            Each player picks a variable and reveals it at the same time. The winner is the one who defeats the others. 
+            In a tie, the process is repeated until a winner is found.</div><br>
+            <ul>
+                <li>Scissors cuts Paper</li>
+                <li>Paper covers Rock</li>
+                <li>Rock crushes Lizard</li>
+                <li>Lizard poisons Spock</li>
+                <li>Spock smashes Scissors</li>
+                <li>Scissors decapitates Lizard</li>
+                <li>Lizard eats Paper</li>
+                <li>Paper disproves Spock</li>
+                <li>Spock vaporizes Rock</li>
+                <li>(and as it always has) Rock crushes Scissors</li>
+            </ul>    
+            <div id="rules">
+                <img src="images/rpsls.png" alt="game rules">  
+                <div>
+                    <i class="fas fa-play-circle fa-4x" onclick="gameplay()"></i><br><br>
+                    PLAY
+                </div> 
+            </div>         
+        </section>
+        <section id="game">
+            <h1>Choose your Warrior</h1><br><br>
+            <div id="player">
+                <img src="images/rock.png" id="rock" alt="rock" onclick="result(this)">
+                <img src="images/paper.png" id="paper" alt="paper" onclick="result(this)">
+                <img src="images/scissors.png" id="scissors" alt="sciccors" onclick="result(this)">
+                <img src="images/lizard.jpg" id="lizard" alt="lizard" onclick="result(this)">
+                <img src="images/spock.png" id="spock" alt="spock" onclick="result(this)">
+            </div>             
+        </section>
+        <section id="result">
+            <div>
+                <img src="images/rock.png" class="computer"> 
+                <img src="images/paper.png" class="computer"> 
+                <img src="images/scissors.png" class="computer"> 
+                <img src="images/lizard.jpg" class="computer"> 
+                <img src="images/spock.png" class="computer">   
+                <p>V/S</p>
+                <img src="images/rock.png" class="player" alt="rock">
+                <img src="images/paper.png" class="player" alt="paper">
+                <img src="images/scissors.png" class="player" alt="scissors">
+                <img src="images/lizard.jpg" class="player" alt="lizard">
+                <img src="images/spock.png" class="player" alt="spock">             
+            </div>      
+            <div id="retry">
+                <i class="fas fa-chevron-circle-left fa-4x" onclick="gameplay()"></i><br><br>RETRY
+            </div>
+        </section>
+    </body>
+</html>

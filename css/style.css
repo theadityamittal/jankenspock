@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Press Start 2P';
+    text-transform: uppercase;
+}
+
+ul{
+    list-style: none;
+}
+
+/*LANDING PAGE*/
+
+header{
+    text-align: center;
+    background: url("../images/wallpaper.jpg")no-repeat center center;
+    background-size: cover;
+    padding-top: 8vh;
+    height: 92vh;
+}
+
+header #title{    
+    font-size: 30px;
+    height: 160px;
+    margin-bottom: 330px;   
+    padding-left: 7%;
+    padding-right: 7%; 
+}
+
+header #play{
+    font-size: 20px;
+}
+
+header #play i{
+    transition: 300ms;
+}
+
+header #play i:hover{
+    transform: scale(1.2);
+}
+
+/*INSTRUCTIONS*/
+
+#instr{
+    display: none;
+    height: 84vh;
+    background-color: #15173f;
+    color: yellow;
+    padding: 8vh;
+    font-size: 12px;
+}
+
+#instr ul{
+    padding-left: 6%;
+}
+
+#instr div, #instr ul li{
+    text-align: left;
+}
+
+#instr #rules{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+#instr #rules img{
+    display: inline-block;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    max-width: 300px;
+}
+
+#instr #rules div{
+    font-size: 15px;
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+#instr div div i{
+    transition: 0.3s;    
+}
+
+#instr div div i:hover{
+    transform: scale(1.2);
+}
+
+/*JANKEN*/
+#game{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: none;
+    text-align: center;
+    background: url("../images/background.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    height: 84vh;
+    color: navy;
+    font-size: 23px;
+}
+
+#game div{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+#game div img{
+    width: 38%;
+    max-width: 180px;
+    transition: 300ms;
+}
+
+#game div img:hover{
+    transform: scale(1.1);
+}
+
+/*RESULT*/
+#result{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: none;
+    text-align: center;
+    background: url("../images/background.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    height: 84vh;
+    color: navy;
+}
+
+#result div{
+    width: 100%;
+    margin: auto;
+}
+
+#result div p{
+    font-size: 20px;
+    margin: 15px;
+}
+
+#result div .computer, #result div .player{
+    display: none;
+    width: 45%;
+    max-width: 190px;
+}
+
+#result #retry{
+    margin-top: 15px;
+    transition: 300ms;
+}
+
+#result #retry:hover{
+    transform: scale(1.1);
+}
+
+@media(min-width: 830px){
+    #instr{
+        font-size: 15px;
+    }
+}
+
+@media(min-width: 700px){
+    header #title{
+        font-size: 40px;
+    }
+}
+
+@media(min-width: 650px){
+    #game{
+        width: 50%;
+        padding-right: 40%;
+        padding-left: 10%;
+
+    }
+}
